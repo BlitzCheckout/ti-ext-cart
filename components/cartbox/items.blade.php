@@ -25,7 +25,7 @@
                     >
                         <span class="name">
                             @if ($cartItem->qty > 1)
-                                <span class="quantity font-weight-bold">
+                                <span class="quantity fw-bold">
                                     {{ $cartItem->qty }} @lang('igniter.cart::default.text_times')
                                 </span>
                             @endif
