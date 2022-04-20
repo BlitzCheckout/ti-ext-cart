@@ -2,7 +2,7 @@
 <div class="form-group @if(!count($customerAddresses)) d-none @endif">
     <label for="">@lang('igniter.cart::default.checkout.text_delivery_address')</label>
     <select
-        class="form-control"
+        class="form-select"
         name="address_id"
     >
         <option value="0">@lang('igniter.cart::default.checkout.text_address')</option>
@@ -102,7 +102,7 @@
             <label for="">@lang('igniter.cart::default.checkout.label_country')</label>
             <select
                 name="address[country_id]"
-                class="form-control"
+                class="form-select"
             >
                 @foreach (countries('country_name') as $key => $value)
                     <option
